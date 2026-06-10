@@ -95,16 +95,16 @@ export default function HomePage() {
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Link
-                    href="/projects"
+                    href="/ai-lab"
                     className="inline-flex items-center justify-center gap-2 bg-ink-950 px-5 py-3.5 text-sm font-medium text-white transition-colors hover:bg-accent-700"
                   >
-                    View Projects <ArrowRight size={17} />
+                    Explore AI Design Lab <Sparkles size={17} />
                   </Link>
                   <Link
-                    href="/ai-lab"
+                    href="/projects"
                     className="inline-flex items-center justify-center gap-2 border border-ink-950/20 bg-white px-5 py-3.5 text-sm font-medium text-ink-950 transition-colors hover:bg-mist-100"
                   >
-                    Explore AI Design Lab <Sparkles size={17} />
+                    View Projects <ArrowRight size={17} />
                   </Link>
                 </div>
               </div>

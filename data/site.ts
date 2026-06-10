@@ -26,8 +26,8 @@ export type Project = {
 
 export const navItems = [
   { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
   { href: "/ai-lab", label: "AI Lab" },
+  { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" }
 ];
