@@ -302,7 +302,7 @@ export const projects: Project[] = [
     type: "AI Product / Vibe Coding Prototype",
     time: "2025",
     summary:
-      "一个面向设计类学生的 AI 作品评审平台，支持作品评审和作品集评审，通过动态评价标准、红牌规则和维度权重，帮助学生在课程作业、比赛投稿、求职作品集准备中获得更清晰的反馈。",
+      "本人耗时一周并反复打磨的一个面向设计类学生的 AI 作品评审平台，支持作品评审和作品集评审，通过动态评价标准、红牌规则和维度权重，帮助学生在课程作业、比赛投稿、求职作品集准备中获得更清晰的反馈。",
     keywords: ["AI 产品", "设计评审", "作品集", "Vibe Coding", "前端原型"],
     tools: ["Codex", "Claude Code", "Next.js", "Tailwind CSS", "Prompt Design"],
     heroImage: "/images/projects/ai-design-critique-studio/hero.png",
