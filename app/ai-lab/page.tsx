@@ -5,7 +5,25 @@ import { PageShell } from "@/components/page-shell";
 import { ProjectCard } from "@/components/project-card";
 import { SectionHeading } from "@/components/section-heading";
 import { ImagePlaceholder } from "@/components/visual-blocks";
-import { aiLabProjects, aiLabSections } from "@/data/site";
+import { aiLabProjects, aiLabSections, projects } from "@/data/site";
+
+const sencebathProject = projects.find((project) => project.slug === "sencebath");
+const relatedAiProjects = [
+  ...aiLabProjects,
+  ...(sencebathProject
+    ? [
+        {
+          ...sencebathProject,
+          title: "Sencebath Web Prototype",
+          type: "Vibe Coding / Product Page Prototype",
+          summary:
+            "为 Sencebath 项目搭建的网页化作品展示，用前端页面承接产品叙事、视觉资料和交互式浏览体验。",
+          keywords: ["Vibe Coding", "Web Prototype", "Next.js", "Sensebath"],
+          accent: "Web Prototype"
+        }
+      ]
+    : [])
+];
 
 export default function AiLabPage() {
   return (
@@ -90,8 +108,8 @@ export default function AiLabPage() {
             description="AI 工作流与 AI 产品原型项目会持续扩展。"
           />
         </FadeIn>
-        <div className="mt-8 grid gap-5 md:grid-cols-2">
-          {aiLabProjects.map((project) => (
+        <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {relatedAiProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} featured />
           ))}
         </div>
