@@ -45,7 +45,7 @@ export default function AboutPage() {
             <div className="flex min-h-[38rem] flex-1 flex-col justify-between py-8 lg:pl-10">
               <div>
                 <p className="max-w-3xl text-pretty text-2xl font-semibold leading-10 text-ink-950 sm:text-3xl sm:leading-[1.45]">
-                  朱宬屹是一名产品设计方向的跨界创作者，关注生成式 AI、产品设计和前端原型工具如何重塑设计流程。
+                  我是一名产品设计方向的跨界创作者，关注生成式 AI、产品设计和前端原型工具如何重塑设计流程。
                 </p>
                 <p className="mt-8 max-w-3xl text-pretty text-base leading-8 text-ink-500 sm:text-lg sm:leading-9">
                   从手绘草图、Rhino 建模、KeyShot 渲染，到 ComfyUI、ControlNet、Flux、Image2 的生成式视觉实验，再到 Codex 和 Claude Code 辅助的 Vibe Coding 原型搭建，我尝试在理性设计流程与感性图像叙事之间建立新的创作方法。
