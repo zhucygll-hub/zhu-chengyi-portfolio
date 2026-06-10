@@ -49,7 +49,7 @@ export const categoryMeta: Record<
   "visual-3d": {
     title: "Visual & 3D Skills",
     description:
-      "基础造型、渲染、视觉排版与手绘能力，用于支撑产品概念的清晰表达。"
+      "基础造型、渲染与手绘能力，用于支撑产品概念的清晰表达。"
   }
 };
 
@@ -458,27 +458,6 @@ export const projects: Project[] = [
       solution: "根据产品、空间和概念图选择不同渲染路径，控制画面的清晰度与情绪。",
       prototype: "页面预留产品渲染、空间渲染、材质细节和前后期对比。",
       outcome: "提高了从模型到作品集视觉呈现的完整度。"
-    }
-  },
-  {
-    slug: "visual-layout",
-    title: "Photoshop / Illustrator 视觉排版",
-    category: "visual-3d",
-    type: "Visual Layout / Portfolio Board",
-    time: "2023-2025",
-    summary: "训练设计展板、信息层级、视觉叙事和图文排版能力。",
-    keywords: ["Photoshop", "Illustrator", "信息层级", "展板"],
-    tools: ["Photoshop", "Illustrator"],
-    heroImage: "/images/projects/visual-layout/hero.jpg",
-    accent: "Narrative Layout",
-    sections: {
-      background: "作品集需要把复杂设计过程整理成可阅读、可判断的视觉叙事。",
-      problem: "图像、文字、分析图和模型图如果缺乏层级，会削弱项目表达。",
-      goal: "用清晰的版式系统组织设计信息，让读者快速理解项目价值。",
-      process: ["确定叙事顺序。", "建立网格和文字层级。", "统一图像风格和注释系统。"],
-      solution: "通过克制排版、图文节奏和局部放大，增强项目页面的阅读效率。",
-      prototype: "页面预留展板截图、局部排版、图文层级和风格系统。",
-      outcome: "形成了从单张图到完整页面叙事的排版意识。"
     }
   },
   {
