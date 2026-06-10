@@ -51,32 +51,32 @@ export default function AiLabPage() {
       <section className="py-12">
         <FadeIn>
           <SectionHeading
-            title="Workflow evidence"
-            description="页面预留给节点图、生成对比、代码生成过程和部署记录，后续可以替换成真实截图。"
+            title="Using Image2"
+            description="使用 Image2 进行海报风格生成与视觉叙事探索，测试不同主题、画面构成和字体氛围的生成效果。"
           />
         </FadeIn>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           <FadeIn>
             <ImagePlaceholder
-              src="/images/ai-lab/comfyui-workflow.jpg"
-              alt="ComfyUI workflow"
-              label="ComfyUI node workflow"
+              src="/images/ai-lab/image2-poster-01.png"
+              alt="Image2 university recruitment poster generation"
+              label="University recruitment poster"
               className="aspect-[4/5]"
             />
           </FadeIn>
           <FadeIn delay={0.05}>
             <ImagePlaceholder
-              src="/images/ai-lab/controlnet-comparison.jpg"
-              alt="ControlNet comparison"
-              label="ControlNet comparison"
+              src="/images/ai-lab/image2-poster-02.jpg"
+              alt="Image2 cinematic monster poster generation"
+              label="Cinematic poster generation"
               className="aspect-[4/5]"
             />
           </FadeIn>
           <FadeIn delay={0.1}>
             <ImagePlaceholder
-              src="/images/ai-lab/vibe-coding-session.jpg"
-              alt="Vibe coding session"
-              label="Vibe coding session"
+              src="/images/ai-lab/image2-poster-03.jpg"
+              alt="Image2 game character poster generation"
+              label="Game character poster"
               className="aspect-[4/5]"
             />
           </FadeIn>
