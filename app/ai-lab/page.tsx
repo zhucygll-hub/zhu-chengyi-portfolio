@@ -128,18 +128,17 @@ export default function AiLabPage() {
             </p>
           </FadeIn>
 
-          <div className="grid gap-4 lg:col-span-8 lg:grid-cols-8">
+          <div className="grid gap-4 md:grid-cols-3 lg:col-span-8">
             {image2Studies.map((study, index) => (
               <FadeIn
                 key={study.src}
                 delay={index * 0.05}
-                className={index === 0 ? "lg:col-span-4 lg:row-span-2" : "lg:col-span-4"}
               >
                 <ImagePlaceholder
                   src={study.src}
                   alt={study.alt}
                   label={study.label}
-                  className={index === 0 ? "aspect-[4/5] lg:h-full" : "aspect-[16/10]"}
+                  className="aspect-[3/4]"
                 />
               </FadeIn>
             ))}
