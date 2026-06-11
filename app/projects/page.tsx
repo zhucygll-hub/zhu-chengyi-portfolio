@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { FadeIn } from "@/components/fade-in";
 import { PageShell } from "@/components/page-shell";
-import { ImagePlaceholder } from "@/components/visual-blocks";
 import { categoryMeta, projects, type ProjectCategory } from "@/data/site";
 
 const orderedCategories: ProjectCategory[] = ["ai-lab", "featured", "visual-3d"];
@@ -103,11 +102,9 @@ export default function ProjectsPage() {
                         <span className="text-sm text-ink-500">
                           {String(index + 1).padStart(2, "0")}
                         </span>
-                        <ImagePlaceholder
+                        <ProjectThumbnail
                           src={project.heroImage}
                           alt={project.title}
-                          label={project.accent}
-                          className="aspect-[4/3]"
                         />
                         <div>
                           <p className="text-sm leading-5 text-accent-700">{project.type}</p>
@@ -139,5 +136,16 @@ export default function ProjectsPage() {
         })}
       </div>
     </PageShell>
+  );
+}
+
+function ProjectThumbnail({ src, alt: _alt }: { src: string; alt: string }) {
+  return (
+    <div className="relative aspect-[4/3] overflow-hidden border border-ink-950/10 bg-mist-200">
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-[1.035]"
+        style={{ backgroundImage: `url("${src}")` }}
+      />
+    </div>
   );
 }
