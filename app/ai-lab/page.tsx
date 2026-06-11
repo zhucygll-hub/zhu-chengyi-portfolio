@@ -7,17 +7,17 @@ import { SectionHeading } from "@/components/section-heading";
 import { ImagePlaceholder } from "@/components/visual-blocks";
 import { aiLabProjects, aiLabSections, projects } from "@/data/site";
 
-const sencebathProject = projects.find((project) => project.slug === "sencebath");
+const sensebathProject = projects.find((project) => project.slug === "sensebath");
 const relatedAiProjects = [
   ...aiLabProjects,
-  ...(sencebathProject
+  ...(sensebathProject
     ? [
         {
-          ...sencebathProject,
-          title: "Sencebath Web Prototype",
+          ...sensebathProject,
+          title: "Sensebath Web Prototype",
           type: "Vibe Coding / Product Page Prototype",
           summary:
-            "为 Sencebath 项目搭建的网页化作品展示，用前端页面承接产品叙事、视觉资料和交互式浏览体验。",
+            "为 Sensebath 项目搭建的网页化作品展示，用前端页面承接产品叙事、视觉资料和交互式浏览体验。",
           keywords: ["Vibe Coding", "Web Prototype", "Next.js", "Sensebath"],
           accent: "Web Prototype"
         }

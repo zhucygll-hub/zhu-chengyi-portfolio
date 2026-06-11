@@ -33,7 +33,7 @@ data/site.ts
 Images are currently represented by placeholder paths such as:
 
 ```text
-/images/projects/sencebath/hero.jpg
+/images/projects/sensebath/web-hero.png
 ```
 
 Add real files under `public/images/...` when the final visuals are ready.

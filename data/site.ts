@@ -55,45 +55,35 @@ export const categoryMeta: Record<
 
 export const projects: Project[] = [
   {
-    slug: "sencebath",
-    title: "Sencebath / BUTR Sense One",
+    slug: "sensebath",
+    title: "Sensebath / BUTR Sense One",
     category: "featured",
     type: "Inclusive Product Design / Tactile Interaction",
     time: "2024",
     summary: "面向视障人群的触觉沐浴套装设计。",
     keywords: ["视障用户", "触觉反馈", "沐浴安全", "无障碍设计"],
     tools: ["User Research", "Rhino", "KeyShot", "Photoshop", "Inclusive Design"],
-    heroImage: "/images/projects/sencebath/hero.png",
+    heroImage: "/images/projects/sensebath/web-hero.png",
     galleryImages: [
       {
-        src: "/images/projects/sencebath/detail-01.png",
-        label: "沐浴场景与套装使用图",
-        aspect: "aspect-[16/10]"
+        src: "/images/projects/sensebath/web-core-insight.png",
+        label: "Sensebath 网页：核心洞察",
+        aspect: "aspect-[16/9]"
       },
       {
-        src: "/images/projects/sencebath/research-01.png",
-        label: "视障用户行为与痛点分析",
-        aspect: "aspect-[16/10]"
+        src: "/images/projects/sensebath/web-value-proposition.png",
+        label: "Sensebath 网页：价值主张",
+        aspect: "aspect-[16/9]"
       },
       {
-        src: "/images/projects/sencebath/process-01.png",
-        label: "用户分析与使用路径",
-        aspect: "aspect-[16/10]"
+        src: "/images/projects/sensebath/web-product-views.png",
+        label: "Sensebath 网页：单品展示",
+        aspect: "aspect-[16/9]"
       },
       {
-        src: "/images/projects/sencebath/dimension-01.jpg",
-        label: "产品尺寸与结构比例",
-        aspect: "aspect-[4/3]"
-      },
-      {
-        src: "/images/projects/sencebath/shampoo.jpg",
-        label: "洗发水触觉瓶盖细节",
-        aspect: "aspect-[4/3]"
-      },
-      {
-        src: "/images/projects/sencebath/body-wash.jpg",
-        label: "沐浴露触觉纹理细节",
-        aspect: "aspect-[4/3]"
+        src: "/images/projects/sensebath/web-safety-design.png",
+        label: "Sensebath 网页：防误操作设计",
+        aspect: "aspect-[16/9]"
       }
     ],
     accent: "Tactile Safety",
