@@ -183,45 +183,6 @@ export const projects: Project[] = [
     }
   },
   {
-    slug: "joybud",
-    title: "悦伴 JOYBUD",
-    category: "featured",
-    type: "Companion Robot / Elderly Care",
-    time: "2024",
-    summary:
-      "面向空巢及独居老人的四足陪伴机器人改良设计，关注情感陪伴、安全监护、远程报警和低门槛交互。",
-    keywords: ["老年人", "情感陪伴", "跌倒检测", "家庭机器人", "人机交互"],
-    tools: ["Product Strategy", "Rhino", "KeyShot", "Storyboard", "UX Flow"],
-    heroImage: "/images/projects/joybud/hero.jpg",
-    galleryImages: [
-      {
-        src: "/images/projects/joybud/hero.jpg",
-        label: "完整画板：四足陪伴机器人改良设计",
-        aspect: "aspect-[16/10]"
-      }
-    ],
-    accent: "Care Companion",
-    sections: {
-      background:
-        "独居与空巢老人面对情感陪伴不足、突发风险难以及时发现、智能设备学习门槛较高等问题。",
-      problem:
-        "现有陪伴设备常停留在语音盒子或监护设备层面，情感存在感弱，交互方式也未必适合老年人的日常习惯。",
-      goal:
-        "改良四足陪伴机器人，使其在家庭环境中同时承担陪伴、提醒、安全监护和远程沟通功能。",
-      process: [
-        "梳理老年人在家中的高频场景，包括起居、服药、跌倒风险和亲属联系。",
-        "推导机器人形态、屏幕反馈、灯光提示和低门槛交互方式。",
-        "通过故事板展示机器人如何在日常陪伴和紧急场景中介入。"
-      ],
-      solution:
-        "JOYBUD 以柔和外观、稳定运动和简化反馈为重点，结合跌倒检测、远程报警和情绪化回应，形成更可亲近的家庭机器人方案。",
-      prototype:
-        "详情页预留角色场景、功能爆炸图、交互流程、机器人姿态图和家庭环境渲染。",
-      outcome:
-        "项目让我更关注技术产品的情绪接受度，尤其是老年用户对形态、声音和反馈节奏的敏感性。"
-    }
-  },
-  {
     slug: "soundshell-serenity-pendant",
     title: "SoundShell / Serenity Pendant",
     category: "featured",
