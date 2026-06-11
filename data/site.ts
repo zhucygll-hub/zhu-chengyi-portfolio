@@ -483,11 +483,6 @@ export const skills = [
 ];
 
 export const contactLinks = [
-  { label: "Email", value: "your.email@example.com", href: "mailto:your.email@example.com" },
-  { label: "Resume", value: "Download resume", href: "/resume.pdf" },
-  { label: "PDF Portfolio", value: "Download portfolio", href: "/portfolio.pdf" },
-  { label: "GitHub", value: "GitHub placeholder", href: "https://github.com/" },
-  { label: "Xiaohongshu", value: "小红书 placeholder", href: "#" },
-  { label: "Behance", value: "Behance placeholder", href: "https://www.behance.net/" },
-  { label: "Zcool", value: "站酷 placeholder", href: "https://www.zcool.com.cn/" }
+  { label: "Email", value: "zhucygll@gmail.com", href: "mailto:zhucygll@gmail.com" },
+  { label: "GitHub", value: "zhucygll-hub", href: "https://github.com/zhucygll-hub" }
 ];
