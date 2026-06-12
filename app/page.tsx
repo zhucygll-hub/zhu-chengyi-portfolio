@@ -77,7 +77,7 @@ export default function HomePage() {
               </div>
 
               <div
-                className="relative mt-8 overflow-hidden py-4 text-ink-950"
+                className="relative mt-4 overflow-hidden pb-4 pt-3 text-ink-950"
                 style={{ fontFamily: '"Arial Black", Impact, Haettenschweiler, sans-serif' }}
               >
                 <p className="poster-word-in origin-left rotate-[-1.2deg] text-[clamp(4.9rem,17vw,14.8rem)] font-black leading-[0.72]">
