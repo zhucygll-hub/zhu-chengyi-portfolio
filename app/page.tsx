@@ -8,27 +8,17 @@ const heroCollage = [
   {
     src: "/images/home/product-system.png",
     label: "Product system",
-    className: "col-span-8 row-span-6"
+    className: "col-span-12 row-span-6"
   },
   {
     src: "/images/home/zero-square-gate.png",
     label: "Spatial design",
-    className: "col-span-4 row-span-4"
+    className: "col-span-6 row-span-4"
   },
   {
     src: "/images/home/flux-workflow.png",
     label: "AI workflow",
-    className: "col-span-4 row-span-3"
-  },
-  {
-    src: "/images/home/ai-critique-studio.png",
-    label: "AI prototype",
-    className: "col-span-5 row-span-4"
-  },
-  {
-    src: "/images/home/soundshell-pendant.jpg",
-    label: "AI device",
-    className: "col-span-3 row-span-3"
+    className: "col-span-6 row-span-4"
   }
 ];
 
@@ -62,7 +52,7 @@ export default function HomePage() {
         <div className="absolute inset-x-0 top-24 h-px bg-ink-950/10" />
 
         <FadeIn>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1.08fr)] xl:gap-10">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(280px,0.36fr)] xl:gap-10">
             <div className="relative z-10 flex min-h-[70vh] flex-col">
               <div className="flex flex-wrap items-end justify-between gap-5 border-b border-ink-950/15 pb-5">
                 <div>
@@ -80,17 +70,17 @@ export default function HomePage() {
                 className="relative mt-4 overflow-hidden pb-4 pt-3 text-ink-950"
                 style={{ fontFamily: '"Arial Black", Impact, Haettenschweiler, sans-serif' }}
               >
-                <p className="poster-word-in origin-left rotate-[-1.2deg] text-[clamp(4.9rem,17vw,14.8rem)] font-black leading-[0.72]">
+                <p className="poster-word-in origin-left rotate-[-1.2deg] text-[clamp(4.9rem,13.8vw,11.8rem)] font-black leading-[0.72]">
                   DESIGN
                 </p>
                 <p
-                  className="poster-word-in -mt-1 ml-[0.06em] origin-left rotate-[0.8deg] text-[clamp(4.1rem,14vw,12rem)] font-black leading-[0.74]"
+                  className="poster-word-in -mt-1 ml-[0.06em] origin-left rotate-[0.8deg] text-[clamp(4.1rem,12vw,10.2rem)] font-black leading-[0.74]"
                   style={{ animationDelay: "120ms" }}
                 >
                   WITH
                 </p>
                 <p
-                  className="poster-sign-in pointer-events-none absolute left-[12%] top-[42%] rotate-[-8deg] text-[clamp(5.4rem,18vw,15rem)] font-normal leading-none text-accent-600"
+                  className="poster-sign-in pointer-events-none absolute left-[12%] top-[42%] rotate-[-8deg] text-[clamp(5.4rem,14vw,11.4rem)] font-normal leading-none text-accent-600"
                   style={{
                     animationDelay: "260ms",
                     fontFamily: '"Segoe Script", "Brush Script MT", "Lucida Handwriting", cursive'
@@ -129,8 +119,8 @@ export default function HomePage() {
             </div>
 
             <FadeIn delay={0.12}>
-              <div className="collage-in relative min-h-[70vh] border border-ink-950/15 bg-white/70 p-3 [animation-delay:180ms]">
-                <div className="grid h-full min-h-[620px] grid-cols-12 grid-rows-10 gap-3">
+              <div className="collage-in relative min-h-[58vh] border border-ink-950/15 bg-white/70 p-3 [animation-delay:180ms]">
+                <div className="grid h-full min-h-[520px] grid-cols-12 grid-rows-10 gap-3">
                   {heroCollage.map((item, index) => (
                     <PosterTile key={item.label} {...item} index={index} />
                   ))}
