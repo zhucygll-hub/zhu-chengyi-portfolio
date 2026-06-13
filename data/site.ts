@@ -282,6 +282,21 @@ export const projects: Project[] = [
         src: "/images/projects/ai-design-critique-studio/history.png",
         label: "历史记录：评审结果复盘与追踪",
         aspect: "aspect-[16/9]"
+      },
+      {
+        src: "/images/projects/ai-design-critique-studio/report-guide.png",
+        label: "Report guide: key issues and scoring basis",
+        aspect: "aspect-[16/9]"
+      },
+      {
+        src: "/images/projects/ai-design-critique-studio/dimension-analysis.png",
+        label: "Dimension analysis: radar score overview",
+        aspect: "aspect-[16/9]"
+      },
+      {
+        src: "/images/projects/ai-design-critique-studio/revision-priority.png",
+        label: "Revision priority: keep and improve checklist",
+        aspect: "aspect-[16/9]"
       }
     ],
     accent: "Critique Engine",
