@@ -329,36 +329,62 @@ export const projects: Project[] = [
   {
     slug: "wahaha-ai-video-ad",
     title: "哇哈哈AI视频广告",
+    englishTitle: "The Evidence of Growing Up",
     category: "ai-lab",
-    type: "AI Video Advertisement / Brand Storytelling",
+    type: "AI Video Advertisement / Felt Film Animation",
     time: "2025",
     summary:
-      "一个围绕哇哈哈品牌进行的 AI 视频广告探索，重点测试脚本生成、分镜规划、视觉风格控制、图生视频衔接和广告节奏表达。",
-    keywords: ["AI 视频", "广告创意", "品牌叙事", "图生视频", "AIGC"],
+      "以娃哈哈AD钙奶30周年为主题的 AI 视频广告短片探索，通过毛毡电影动画风格讲述童年记忆、成长瞬间与品牌陪伴。",
+    keywords: ["AI 视频", "广告创意", "娃哈哈", "毛毡动画", "AIGC"],
     tools: ["Prompt Design", "Image-to-Video", "Storyboard", "AIGC Workflow"],
-    heroImage: "",
+    heroImage: "/images/projects/wahaha-ai-video-ad/poster.png",
+    galleryImages: [
+      {
+        src: "/images/projects/wahaha-ai-video-ad/character-definition.png",
+        label: "人物定性：主角成长阶段与毛毡角色风格",
+        aspect: "aspect-[5/4]"
+      },
+      {
+        src: "/images/projects/wahaha-ai-video-ad/scene-definition.png",
+        label: "场景定性：温暖童话世界与品牌记忆空间",
+        aspect: "aspect-[16/9]"
+      },
+      {
+        src: "/images/projects/wahaha-ai-video-ad/storyboard.png",
+        label: "分镜图：短片叙事节奏与关键镜头规划",
+        aspect: "aspect-[21/9]"
+      },
+      {
+        src: "/images/projects/wahaha-ai-video-ad/poster.png",
+        label: "宣传海报：《长大的证据》主视觉",
+        aspect: "aspect-[3/4]"
+      }
+    ],
     accent: "AI Video Ad",
     sections: {
       background:
-        "AI 视频工具正在改变广告概念验证的速度，让品牌脚本、画面风格和动态镜头能够在早期阶段快速形成可观看样片。",
+        "《长大的证据》是一部以娃哈哈AD钙奶30周年为主题的毛毡电影动画短片，围绕童年记忆、成长经历和品牌陪伴建立叙事。",
       problem:
-        "广告类生成内容容易出现风格不统一、镜头衔接不顺、品牌识别弱和节奏松散等问题，需要在脚本、分镜和视觉控制之间建立更稳定的流程。",
+        "AI 视频广告需要同时解决品牌识别、角色一致性、场景连续性和情绪节奏问题，否则容易停留在单张好看的画面，而无法形成完整短片。",
       goal:
-        "以哇哈哈品牌为对象，探索如何用 AIGC 工具快速生成具备品牌感、叙事节奏和视觉完整度的视频广告原型。",
+        "通过人物定性、场景定性、分镜图和宣传海报，建立一套可延展到 AI 视频生成的广告前期视觉方案。",
+      developmentNote: [
+        "《长大的证据》是一部以娃哈哈AD钙奶30周年为主题的毛毡电影动画短片。故事讲述一位年轻人在整理旧物时发现了一瓶陪伴自己多年的AD钙奶，并意外发现瓶中收藏着无数发光的星星。随着记忆被唤醒，他重新经历了童年、成长、求学与追逐梦想的过程。每一次快乐、失落、坚持与勇敢，都会化作一颗星星被悄悄收藏起来。",
+        "在由羊毛毡构建的温暖童话世界中，主角从天真烂漫的孩童成长为独立前行的青年，那些曾经以为微不足道的瞬间，最终汇聚成照亮整座城市的璀璨银河。影片通过充满手工质感的毛毡视觉风格和温暖治愈的叙事方式，表达“长大的证据，不是年龄，而是那些没有放弃的瞬间”的主题，展现AD钙奶30年来陪伴一代人成长的情感价值与品牌温度。"
+      ],
       process: [
-        "梳理广告主题、目标受众和核心传播语，先确定短视频叙事结构。",
-        "拆分脚本与镜头分镜，生成关键画面并统一画面风格。",
-        "使用图生视频工具测试镜头运动、转场节奏和广告片段连贯性。"
+        "围绕 AD 钙奶 30 周年和成长记忆主题，确定毛毡电影动画的整体风格方向。",
+        "先完成人物定性与场景定性，保证角色、材质、空间和情绪基调统一。",
+        "通过分镜图规划短片节奏，再用宣传海报凝练品牌主题和视觉记忆点。"
       ],
       solution:
-        "通过脚本先行、关键帧控制和分段生成的方式，将 AI 视频从随机出片转向可管理的广告原型流程。",
+        "项目以毛毡质感、发光星星和成长回忆作为核心视觉符号，把品牌陪伴转译为温暖、可叙事、可视频化的 AI 广告方案。",
       prototype:
-        "图片和视频素材暂时预留，后续将补充广告封面、关键帧、分镜过程和视频片段。",
+        "当前页面展示人物定性、场景定性、分镜图和宣传海报，后续可继续补充 AI 视频片段与生成过程。",
       outcome:
-        "项目用于展示我对 AI 视频广告流程的理解，包括从创意概念到可播放样片的快速推导能力。"
+        "项目展示了我用 AIGC 方法完成广告短片前期设定、视觉统一和叙事表达的能力。"
     }
-  },
-  {
+  },  {
     slug: "deep-sea-echoes",
     title: "AIGC《深海回响》",
     category: "ai-lab",
