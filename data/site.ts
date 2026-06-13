@@ -394,7 +394,24 @@ export const projects: Project[] = [
       "一个以深海意象为主题的 AIGC 视觉叙事实验，关注氛围生成、连续画面控制、影像节奏和概念短片表达。",
     keywords: ["AIGC", "视觉叙事", "AI 影像", "概念短片", "图生视频"],
     tools: ["AIGC Workflow", "Image-to-Video", "Prompt Design", "Visual Direction"],
-    heroImage: "",
+    heroImage: "/images/projects/deep-sea-echoes/storyboard-01.jpg",
+    galleryImages: [
+      {
+        src: "/images/projects/deep-sea-echoes/storyboard-01.jpg",
+        label: "分镜图 01：深海叙事开场与氛围建立",
+        aspect: "aspect-[16/9]"
+      },
+      {
+        src: "/images/projects/deep-sea-echoes/storyboard-02.jpg",
+        label: "分镜图 02：关键视觉段落与镜头推进",
+        aspect: "aspect-[16/9]"
+      },
+      {
+        src: "/images/projects/deep-sea-echoes/storyboard-03.png",
+        label: "分镜图 03：动态影像节奏与概念延展",
+        aspect: "aspect-[16/9]"
+      }
+    ],
     accent: "AIGC Film",
     sections: {
       background:
@@ -411,12 +428,11 @@ export const projects: Project[] = [
       solution:
         "通过主题关键词、关键帧筛选和分段视频生成，把深海氛围转化为更稳定的 AIGC 叙事影像语言。",
       prototype:
-        "图片和视频素材暂时预留，后续将补充主视觉、关键帧、生成过程和短片片段。",
+        "页面展示三组分镜图，用于呈现短片的视觉节奏、关键镜头和深海叙事氛围，后续可继续补充视频片段。",
       outcome:
         "项目用于展示我对 AI 视觉叙事和图生视频流程的探索，强调从视觉概念到动态表达的完整链路。"
     }
-  },
-  {
+  },  {
     slug: "rhino-modeling",
     title: "Rhino 模型训练",
     category: "visual-3d",
