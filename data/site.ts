@@ -327,6 +327,70 @@ export const projects: Project[] = [
     }
   },
   {
+    slug: "wahaha-ai-video-ad",
+    title: "哇哈哈AI视频广告",
+    category: "ai-lab",
+    type: "AI Video Advertisement / Brand Storytelling",
+    time: "2025",
+    summary:
+      "一个围绕哇哈哈品牌进行的 AI 视频广告探索，重点测试脚本生成、分镜规划、视觉风格控制、图生视频衔接和广告节奏表达。",
+    keywords: ["AI 视频", "广告创意", "品牌叙事", "图生视频", "AIGC"],
+    tools: ["Prompt Design", "Image-to-Video", "Storyboard", "AIGC Workflow"],
+    heroImage: "",
+    accent: "AI Video Ad",
+    sections: {
+      background:
+        "AI 视频工具正在改变广告概念验证的速度，让品牌脚本、画面风格和动态镜头能够在早期阶段快速形成可观看样片。",
+      problem:
+        "广告类生成内容容易出现风格不统一、镜头衔接不顺、品牌识别弱和节奏松散等问题，需要在脚本、分镜和视觉控制之间建立更稳定的流程。",
+      goal:
+        "以哇哈哈品牌为对象，探索如何用 AIGC 工具快速生成具备品牌感、叙事节奏和视觉完整度的视频广告原型。",
+      process: [
+        "梳理广告主题、目标受众和核心传播语，先确定短视频叙事结构。",
+        "拆分脚本与镜头分镜，生成关键画面并统一画面风格。",
+        "使用图生视频工具测试镜头运动、转场节奏和广告片段连贯性。"
+      ],
+      solution:
+        "通过脚本先行、关键帧控制和分段生成的方式，将 AI 视频从随机出片转向可管理的广告原型流程。",
+      prototype:
+        "图片和视频素材暂时预留，后续将补充广告封面、关键帧、分镜过程和视频片段。",
+      outcome:
+        "项目用于展示我对 AI 视频广告流程的理解，包括从创意概念到可播放样片的快速推导能力。"
+    }
+  },
+  {
+    slug: "deep-sea-echoes",
+    title: "AIGC《深海回响》",
+    category: "ai-lab",
+    type: "AIGC Narrative Film / Visual Experiment",
+    time: "2025",
+    summary:
+      "一个以深海意象为主题的 AIGC 视觉叙事实验，关注氛围生成、连续画面控制、影像节奏和概念短片表达。",
+    keywords: ["AIGC", "视觉叙事", "AI 影像", "概念短片", "图生视频"],
+    tools: ["AIGC Workflow", "Image-to-Video", "Prompt Design", "Visual Direction"],
+    heroImage: "",
+    accent: "AIGC Film",
+    sections: {
+      background:
+        "生成式影像工具让个人创作者能够以更低成本探索概念短片，将抽象主题转化为可观看的连续视觉片段。",
+      problem:
+        "AIGC 叙事影像常面临角色与场景一致性不足、镜头情绪断裂、画面质感波动和主题表达不清晰等问题。",
+      goal:
+        "以《深海回响》为主题，构建一组具有统一氛围、视觉连续性和叙事暗线的 AI 影像实验。",
+      process: [
+        "设定深海、回声、未知生命和记忆残片等核心意象，形成视觉关键词。",
+        "生成关键视觉帧，筛选统一的色调、空间感和主体形态。",
+        "将静态画面延展为动态片段，测试镜头运动和情绪节奏。"
+      ],
+      solution:
+        "通过主题关键词、关键帧筛选和分段视频生成，把深海氛围转化为更稳定的 AIGC 叙事影像语言。",
+      prototype:
+        "图片和视频素材暂时预留，后续将补充主视觉、关键帧、生成过程和短片片段。",
+      outcome:
+        "项目用于展示我对 AI 视觉叙事和图生视频流程的探索，强调从视觉概念到动态表达的完整链路。"
+    }
+  },
+  {
     slug: "rhino-modeling",
     title: "Rhino 模型训练",
     category: "visual-3d",
