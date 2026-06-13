@@ -11,6 +11,7 @@ export type Project = {
   keywords: string[];
   tools: string[];
   heroImage: string;
+  heroVideo?: string;
   galleryImages?: { src: string; label: string; aspect?: string }[];
   accent: string;
   sections: {
@@ -337,6 +338,7 @@ export const projects: Project[] = [
     keywords: ["ComfyUI", "ControlNet", "Flux", "Image2", "AIGC", "图生视频"],
     tools: ["ComfyUI", "ControlNet", "Flux", "Image2", "Photoshop", "Video Workflow"],
     heroImage: "/images/projects/aigc-visual-workflow/hero.png",
+    heroVideo: "/videos/ailab-hero.mp4",
     galleryImages: [
       {
         src: "/images/projects/aigc-visual-workflow/detail-01.jpg",

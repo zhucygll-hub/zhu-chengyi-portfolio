@@ -68,12 +68,21 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           </div>
         </FadeIn>
         <FadeIn delay={0.08}>
-          <ImagePlaceholder
-            src={project.heroImage}
-            alt={project.title}
-            label="Main visual"
-            className="aspect-[16/11]"
-          />
+          {project.heroVideo ? (
+            <VideoPlaceholder
+              src={project.heroVideo}
+              poster={project.heroImage}
+              label="Main visual"
+              className="aspect-[16/11]"
+            />
+          ) : (
+            <ImagePlaceholder
+              src={project.heroImage}
+              alt={project.title}
+              label="Main visual"
+              className="aspect-[16/11]"
+            />
+          )}
         </FadeIn>
       </section>
 
@@ -183,6 +192,38 @@ function DetailBlock({ title, content }: { title: string; content: string }) {
         <p className="mt-4 text-pretty text-base leading-8 text-ink-500">{content}</p>
       </div>
     </FadeIn>
+  );
+}
+
+function VideoPlaceholder({
+  src,
+  poster,
+  label,
+  className = "aspect-[16/10]"
+}: {
+  src: string;
+  poster: string;
+  label: string;
+  className?: string;
+}) {
+  return (
+    <div className={`group relative overflow-hidden bg-ink-950 ${className}`}>
+      <video
+        className="h-full w-full object-cover"
+        src={src}
+        poster={poster}
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+        preload="metadata"
+      />
+      <div className="pointer-events-none absolute inset-x-6 bottom-6 flex items-end justify-between gap-4 border-t border-white/70 pt-4">
+        <span className="text-sm font-medium text-white drop-shadow">{label}</span>
+        <span className="max-w-[55%] truncate text-right text-xs text-white/80">{src}</span>
+      </div>
+    </div>
   );
 }
 
