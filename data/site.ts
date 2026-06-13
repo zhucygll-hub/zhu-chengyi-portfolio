@@ -11,7 +11,6 @@ export type Project = {
   keywords: string[];
   tools: string[];
   heroImage: string;
-  heroVideo?: string;
   galleryImages?: { src: string; label: string; aspect?: string }[];
   accent: string;
   sections: {
@@ -325,51 +324,6 @@ export const projects: Project[] = [
         "详情页预留产品界面截图、评审流程图、规则配置面板和反馈报告样式。",
       outcome:
         "这是我将 AI 能力转化为产品原型的一次实践，也验证了 Codex 与 Claude Code 在早期产品实验中的价值。"
-    }
-  },
-  {
-    slug: "aigc-visual-workflow",
-    title: "AIGC Visual Workflow",
-    category: "ai-lab",
-    type: "AI Visual Workflow / Creative Technology",
-    time: "2025",
-    summary:
-      "展示我使用 ComfyUI、ControlNet、Flux、Image2、图生视频等工具进行视觉生成、线稿控制、深度控制、材质渲染和视觉叙事的探索。",
-    keywords: ["ComfyUI", "ControlNet", "Flux", "Image2", "AIGC", "图生视频"],
-    tools: ["ComfyUI", "ControlNet", "Flux", "Image2", "Photoshop", "Video Workflow"],
-    heroImage: "/images/projects/aigc-visual-workflow/hero.png",
-    heroVideo: "/videos/ailab-hero.mp4",
-    galleryImages: [
-      {
-        src: "/images/projects/aigc-visual-workflow/detail-01.jpg",
-        label: "Image2 海报生成：视觉风格探索",
-        aspect: "aspect-[3/4]"
-      },
-      {
-        src: "/images/projects/aigc-visual-workflow/process-01.jpg",
-        label: "ComfyUI 人物八视图与参考控制",
-        aspect: "aspect-[16/10]"
-      }
-    ],
-    accent: "Controlled Generation",
-    sections: {
-      background:
-        "生成式 AI 正在从单次出图工具转向可被控制、可被复现、可接入设计流程的视觉生产系统。",
-      problem:
-        "如果只依赖随机提示词，图像结果难以稳定服务于产品概念、风格延展或连续叙事。",
-      goal:
-        "通过节点式工作流、ControlNet 控制和多模型组合，把 AI 图像生成纳入更可控的设计表达流程。",
-      process: [
-        "搭建 ComfyUI 工作流，测试线稿、深度、姿态和参考图控制。",
-        "比较 Flux、Image2 等模型在材质、构图和产品氛围上的差异。",
-        "将生成结果继续用于海报、视频和概念视觉延展。"
-      ],
-      solution:
-        "工作流强调从输入控制到结果筛选的全过程管理，让 AI 成为视觉推导工具，而不只是最终效果图生成器。",
-      prototype:
-        "详情页预留节点截图、输入控制图、生成结果对比、海报延展和图生视频片段封面。",
-      outcome:
-        "这个实验扩展了我的视觉原型能力，也让我更清楚 AI 在设计流程中适合承担哪一类任务。"
     }
   },
   {

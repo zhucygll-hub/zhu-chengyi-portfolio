@@ -29,6 +29,19 @@ const image2Studies = [
   }
 ];
 
+const workflowEvidence = [
+  {
+    src: "/images/projects/aigc-visual-workflow/hero.png",
+    alt: "ComfyUI controlled generation workflow",
+    label: "Controlled generation workflow"
+  },
+  {
+    src: "/images/projects/aigc-visual-workflow/process-01.jpg",
+    alt: "ComfyUI character reference control",
+    label: "ComfyUI reference control"
+  }
+];
+
 const sensebathProject = projects.find((project) => project.slug === "sensebath");
 const relatedAiProjects = [
   ...aiLabProjects,
@@ -113,6 +126,43 @@ export default function AiLabPage() {
               </div>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      <section className="py-16" id="aigc-visual-workflow">
+        <div className="grid gap-8 border-t border-ink-950/15 pt-8 lg:grid-cols-12">
+          <FadeIn className="lg:col-span-4">
+            <p className="text-sm font-medium text-accent-700">AIGC Visual Workflow</p>
+            <h2 className="mt-5 max-w-md text-balance font-display text-4xl font-semibold leading-tight text-ink-950 sm:text-5xl">
+              A skill chain for controlled visual generation.
+            </h2>
+            <p className="mt-5 max-w-md text-pretty text-base leading-8 text-ink-500">
+              ComfyUI、ControlNet、Flux、Image2 和图生视频共同组成可复用的视觉工作流，
+              用来验证构图、线稿控制、材质渲染和动态叙事，而不是单独作为一个项目案例。
+            </p>
+          </FadeIn>
+
+          <div className="lg:col-span-8">
+            <FadeIn delay={0.04}>
+              <VideoEvidence
+                src="/videos/ailab-hero.mp4"
+                poster="/images/projects/aigc-visual-workflow/hero.png"
+                label="AI Lab video workflow"
+              />
+            </FadeIn>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              {workflowEvidence.map((item, index) => (
+                <FadeIn key={item.src} delay={index * 0.05}>
+                  <ImagePlaceholder
+                    src={item.src}
+                    alt={item.alt}
+                    label={item.label}
+                    className="aspect-[16/10]"
+                  />
+                </FadeIn>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -201,5 +251,35 @@ export default function AiLabPage() {
         </FadeIn>
       </section>
     </PageShell>
+  );
+}
+
+function VideoEvidence({
+  src,
+  poster,
+  label
+}: {
+  src: string;
+  poster: string;
+  label: string;
+}) {
+  return (
+    <div className="relative overflow-hidden bg-ink-950 aspect-[16/9]">
+      <video
+        className="h-full w-full object-cover"
+        src={src}
+        poster={poster}
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+        preload="metadata"
+      />
+      <div className="pointer-events-none absolute inset-x-6 bottom-6 flex items-end justify-between gap-4 border-t border-white/70 pt-4">
+        <span className="text-sm font-medium text-white drop-shadow">{label}</span>
+        <span className="max-w-[55%] truncate text-right text-xs text-white/80">{src}</span>
+      </div>
+    </div>
   );
 }
