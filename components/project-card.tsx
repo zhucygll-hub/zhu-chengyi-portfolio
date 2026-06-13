@@ -29,6 +29,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
           alt={project.title}
           label={project.accent}
           className={featured ? "aspect-[16/10]" : "aspect-[4/3]"}
+          fit={project.preserveImageRatio ? "contain" : "cover"}
         />
         <div className="flex flex-1 flex-col px-1 pb-1 pt-5">
           <div className="flex items-start justify-between gap-4">

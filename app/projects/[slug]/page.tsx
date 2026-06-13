@@ -73,13 +73,18 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             alt={project.title}
             label="Main visual"
             className="aspect-[16/11]"
+            fit={project.preserveImageRatio ? "contain" : "cover"}
           />
         </FadeIn>
       </section>
 
       <section className="py-10">
         <FadeIn>
-          <LargeVisualStrip src={project.heroImage} alt={project.title} />
+          <LargeVisualStrip
+            src={project.heroImage}
+            alt={project.title}
+            fit={project.preserveImageRatio ? "contain" : "cover"}
+          />
         </FadeIn>
       </section>
 
@@ -106,6 +111,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                   alt={`${project.title} ${image.label}`}
                   label={image.label}
                   className={image.aspect ?? "aspect-[16/10]"}
+                  fit={project.preserveImageRatio ? "contain" : "cover"}
                 />
               </FadeIn>
             ))}

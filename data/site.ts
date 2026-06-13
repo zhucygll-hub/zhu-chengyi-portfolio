@@ -11,6 +11,7 @@ export type Project = {
   keywords: string[];
   tools: string[];
   heroImage: string;
+  preserveImageRatio?: boolean;
   galleryImages?: { src: string; label: string; aspect?: string }[];
   accent: string;
   sections: {
@@ -503,6 +504,29 @@ export const projects: Project[] = [
     keywords: ["手绘", "速写", "概念草图", "形体表达"],
     tools: ["Sketching", "Marker", "Procreate"],
     heroImage: "/images/projects/sketching-foundation/hero.jpg",
+    preserveImageRatio: true,
+    galleryImages: [
+      {
+        src: "/images/projects/sketching-foundation/hero.jpg",
+        label: "Sketch practice: product form and composition",
+        aspect: "aspect-[1220/945]"
+      },
+      {
+        src: "/images/projects/sketching-foundation/sketch-01.jpg",
+        label: "Sketch practice: vertical ideation sheet",
+        aspect: "aspect-[1280/1707]"
+      },
+      {
+        src: "/images/projects/sketching-foundation/sketch-02.jpg",
+        label: "Sketch practice: form study",
+        aspect: "aspect-[1107/1341]"
+      },
+      {
+        src: "/images/projects/sketching-foundation/sketch-03.jpg",
+        label: "Sketch practice: vertical rendering sheet",
+        aspect: "aspect-[1280/1707]"
+      }
+    ],
     accent: "Idea Sketch",
     sections: {
       background: "手绘是产品设计早期构思和沟通中仍然高效的表达方式。",
