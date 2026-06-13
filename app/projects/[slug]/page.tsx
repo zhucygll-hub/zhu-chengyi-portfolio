@@ -126,6 +126,9 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           <DetailBlock title="Background" content={project.sections.background} />
           <DetailBlock title="Problem" content={project.sections.problem} />
           <DetailBlock title="Goal" content={project.sections.goal} />
+          {project.sections.developmentNote ? (
+            <DevelopmentNote paragraphs={project.sections.developmentNote} />
+          ) : null}
           <FadeIn>
             <div className="border border-ink-950/10 bg-white/70 p-6 sm:p-7">
               <h3 className="text-xl font-semibold text-ink-950">Process</h3>
@@ -178,6 +181,28 @@ function DetailBlock({ title, content }: { title: string; content: string }) {
       <div className="border border-ink-950/10 bg-white/70 p-6 sm:p-7">
         <h3 className="text-xl font-semibold text-ink-950">{title}</h3>
         <p className="mt-4 text-pretty text-base leading-8 text-ink-500">{content}</p>
+      </div>
+    </FadeIn>
+  );
+}
+
+function DevelopmentNote({ paragraphs }: { paragraphs: string[] }) {
+  return (
+    <FadeIn>
+      <div className="border-y border-ink-950/15 py-7">
+        <div className="grid gap-6 lg:grid-cols-[8rem_1fr]">
+          <div>
+            <p className="text-sm font-medium text-accent-700">03 / Development Note</p>
+            <h3 className="mt-3 text-xl font-semibold leading-tight text-ink-950">开发介绍</h3>
+          </div>
+          <div className="space-y-5">
+            {paragraphs.map((paragraph) => (
+              <p key={paragraph} className="max-w-3xl text-pretty text-base leading-8 text-ink-600">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </div>
       </div>
     </FadeIn>
   );
